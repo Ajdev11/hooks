@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 
-class ClickCounter extends Component {
+class MouseHover extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       count: 0,
     };
@@ -17,11 +16,11 @@ class ClickCounter extends Component {
   render() {
     const { count } = this.state;
     return (
-      <div>
-        <button onClick={this.IncrementClick}>Clicked {count} times</button>
-      </div>
+      <>
+        <h1 onMouseOver={this.IncrementClick}>MouseHover{count}</h1>
+      </>
     );
   }
 }
 
-export default ClickCounter;
+export default MouseHover;
