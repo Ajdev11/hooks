@@ -1,26 +1,17 @@
 import React, { Component } from "react";
+import UpdatedComponents from "./withCounter";
 
 class MouseHover extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0,
-    };
-    this.IncrementClick = this.IncrementClick.bind(this);
-  }
-  IncrementClick() {
-    this.setState((prevState) => {
-      return { count: prevState.count + 1 };
-    });
-  }
   render() {
-    const { count } = this.state;
+    const { count, IncrementClick } = this.props;
     return (
       <>
-        <h1 onMouseOver={this.IncrementClick}>MouseHover{count}</h1>
+        <h1 onMouseOver={IncrementClick}>
+           MouseHover{count}
+        </h1>
       </>
     );
   }
 }
 
-export default MouseHover;
+export default UpdatedComponents(MouseHover);
