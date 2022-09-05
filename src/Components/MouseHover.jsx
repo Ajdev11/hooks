@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import UpdatedComponents from "./withCounter";
+import withCounter from "./withCounter";
 
 class MouseHover extends Component {
   render() {
@@ -14,4 +14,4 @@ class MouseHover extends Component {
   }
 }
 
-export default UpdatedComponents(MouseHover);
+export default withCounter(MouseHover);

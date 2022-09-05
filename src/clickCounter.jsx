@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import UpdatedComponents from "./Components/withCounter";
+import withCounter from "./Components/withCounter";
 
 class ClickCounter extends Component {
   render() {
@@ -14,4 +14,4 @@ class ClickCounter extends Component {
   }
 }
 
-export default UpdatedComponents(ClickCounter);
+export default withCounter(ClickCounter);
