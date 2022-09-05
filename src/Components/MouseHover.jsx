@@ -14,4 +14,4 @@ class MouseHover extends Component {
   }
 }
 
-export default withCounter(MouseHover, 5git add);
+export default withCounter(MouseHover, 5);
