@@ -1,14 +1,10 @@
 import React from "react";
-import ReactDom from "react-dom";
-import Square from "./App";
-import "./index.css";
+import ReactDom from "react-dom/client";
+import App from "./App";
 
-ReactDom.render(
-  <React.StrictMode>
-    <Square />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const container = document.getElementById('root')
+const root = ReactDom.createRoot(container)
+root.render(
+  <App />
+)
 
-/*const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />);*/
