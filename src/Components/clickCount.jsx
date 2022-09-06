@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 
+
 class ClickCount extends Component {
   render() {
-    const { count, handleIncrement } = this.props;
+    const { count,clickIncrement} = this.props;
     return (
       <>
-        <button onClick={handleIncrement}>ClickCount{count}</button>
+        <button onClick={clickIncrement}>Please click me{count}</button>
       </>
     );
   }

@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 class Hover extends Component {
   render() {
-    const { count, handleIncrement } = this.props;
+    const { count, IncrementClick } = this.props;
     return (
       <>
-        <h1 onMouseOver={handleIncrement}>Hover{count}</h1>
+        <h1 onMouseOver={IncrementClick}>Hover{count}</h1>
       </>
     );
   }
