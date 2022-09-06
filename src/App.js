@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import HooksCounter from "./HooksComponents/HooksCounter";
-import HooksCounter2 from "./HooksComponents/HooksCounter2";
+//import HooksCounter from "./HooksComponents/HooksCounter";
+//import HooksCounter2 from "./HooksComponents/HooksCounter2";
+import HooksCounter3 from "./HooksComponents/HooksCounter3";
 //import ClickCounter from "./clickCounter";
 //import MouseHover from "./Components/MouseHover";
 //import ClickCount from "./Components/clickCount";
@@ -30,9 +31,10 @@ class App extends Component {
       <ComponentC />
       </UserProvider>
        <HooksCounter />
+      <HooksCounter2 />
       </>*/
       <>
-     <HooksCounter2 />
+      <HooksCounter3 />
       </>
     );
   }
