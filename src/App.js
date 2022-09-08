@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import "./index.css"
 //import HooksCounter from "./HooksComponents/HooksCounter";
 //import HooksCounter2 from "./HooksComponents/HooksCounter2";
-import HooksCounter3 from "./HooksComponents/HooksCounter3";
+//import HooksCounter3 from "./HooksComponents/HooksCounter3";
 //import ClickCounter from "./clickCounter";
 //import MouseHover from "./Components/MouseHover";
 //import ClickCount from "./Components/clickCount";
@@ -10,6 +11,9 @@ import HooksCounter3 from "./HooksComponents/HooksCounter3";
 //import Counter from "./Components/Counter";
 //import ComponentC from "./Components/ComponentC";
 //import { UserProvider } from "./Components/userContext";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./Components/HomePage";
+import About from "./Components/About";
 
 
 class App extends Component {
@@ -32,9 +36,13 @@ class App extends Component {
       </UserProvider>
        <HooksCounter />
       <HooksCounter2 />
+      <HooksCounter3 />
       </>*/
       <>
-      <HooksCounter3 />
+        <Routes>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </>
     );
   }
