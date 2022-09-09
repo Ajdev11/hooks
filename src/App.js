@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./index.css"
+//import "./index.css"
 //import HooksCounter from "./HooksComponents/HooksCounter";
 //import HooksCounter2 from "./HooksComponents/HooksCounter2";
 //import HooksCounter3 from "./HooksComponents/HooksCounter3";
@@ -11,10 +11,10 @@ import "./index.css"
 //import Counter from "./Components/Counter";
 //import ComponentC from "./Components/ComponentC";
 //import { UserProvider } from "./Components/userContext";
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./Components/HomePage";
-import About from "./Components/About";
-
+//import { Routes, Route } from "react-router-dom";
+//import HomePage from "./Components/HomePage";
+//import About from "./Components/About";
+import HooksArray from "./HooksComponents/HooksArray";
 
 class App extends Component {
   render() {
@@ -37,12 +37,13 @@ class App extends Component {
        <HooksCounter />
       <HooksCounter2 />
       <HooksCounter3 />
-      </>*/
-      <>
-        <Routes>
+      <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/about" element={<About />} />
         </Routes>
+      </>*/
+      <>
+        <HooksArray />
       </>
     );
   }
