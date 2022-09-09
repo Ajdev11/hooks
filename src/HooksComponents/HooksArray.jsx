@@ -1,17 +1,16 @@
 import React, {useState} from 'react'
 
-
 function HooksArray() {
-    const [items, setItems] = useState([])
-    const addItem=()=>{
-        setItems([...items, {id:items.length, value: Math.floor(Math.random()*100)+1}])
-    }
+const [lists, setLists] = useState([])
+const addList=()=>{
+    setLists([...lists, {id:lists.length, value:Math.floor(Math.random()*200)}])
+}
   return (
     <div>
-        <button onClick={addItem}>ADD TO CART</button>
-      <ul>
-        {items.map(item=><li key={item.id}>{item.value}</li>)}
-      </ul>
+        <button onClick={addList}>ADD TO LIST</button>
+       <ul>
+        {lists.map(list=><li key={list.id}>{list.value}</li>)}
+       </ul>
     </div>
   )
 }

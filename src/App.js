@@ -14,7 +14,8 @@ import React, { Component } from "react";
 //import { Routes, Route } from "react-router-dom";
 //import HomePage from "./Components/HomePage";
 //import About from "./Components/About";
-import HooksArray from "./HooksComponents/HooksArray";
+//import HooksArray from "./HooksComponents/HooksArray";
+import HooksEffect1 from "./HooksComponents/HooksEffect1";
 
 class App extends Component {
   render() {
@@ -41,9 +42,10 @@ class App extends Component {
           <Route path="/home" element={<HomePage />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <HooksArray />
       </>*/
       <>
-        <HooksArray />
+       <HooksEffect1 />
       </>
     );
   }
