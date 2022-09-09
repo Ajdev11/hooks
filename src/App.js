@@ -15,7 +15,9 @@ import React, { Component } from "react";
 //import HomePage from "./Components/HomePage";
 //import About from "./Components/About";
 //import HooksArray from "./HooksComponents/HooksArray";
-import HooksEffect1 from "./HooksComponents/HooksEffect1";
+//import HooksEffect1 from "./HooksComponents/HooksEffect1";
+//import HooksMouse from "./HooksComponents/HooksMouse";
+import MouseContainer from "./HooksComponents/MouseContainer";
 
 class App extends Component {
   render() {
@@ -43,9 +45,11 @@ class App extends Component {
           <Route path="/about" element={<About />} />
         </Routes>
         <HooksArray />
+        <HooksEffect1 />
+        <HooksMouse />
       </>*/
       <>
-       <HooksEffect1 />
+       <MouseContainer />
       </>
     );
   }
