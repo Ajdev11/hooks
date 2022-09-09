@@ -17,7 +17,9 @@ import React, { Component } from "react";
 //import HooksArray from "./HooksComponents/HooksArray";
 //import HooksEffect1 from "./HooksComponents/HooksEffect1";
 //import HooksMouse from "./HooksComponents/HooksMouse";
-import MouseContainer from "./HooksComponents/MouseContainer";
+//import MouseContainer from "./HooksComponents/MouseContainer";
+import IntervalCounter from "./HooksComponents/intervalCounter";
+
 
 class App extends Component {
   render() {
@@ -47,9 +49,10 @@ class App extends Component {
         <HooksArray />
         <HooksEffect1 />
         <HooksMouse />
+        <MouseContainer />
       </>*/
       <>
-       <MouseContainer />
+      <IntervalCounter />
       </>
     );
   }
