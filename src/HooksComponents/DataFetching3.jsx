@@ -9,8 +9,11 @@ function DataFetching3() {
     setIdButtonClick(id);
   };
   useEffect(() => {
-    axios.get(`https://jsonplaceholder.typicode.com/posts/${idButtonClick}`).then((res) => {
+    axios.get(`https://jsonplaceholderss.typicode.com/posts/${idButtonClick}`).then((res) => {
       setPost(res.data);
+    }) 
+    .catch((err) => {
+      console.log("There is an error with this posts");
     });
   }, [idButtonClick]);
  
