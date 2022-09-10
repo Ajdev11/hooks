@@ -18,8 +18,14 @@ import React, { Component } from "react";
 //import HooksEffect1 from "./HooksComponents/HooksEffect1";
 //import HooksMouse from "./HooksComponents/HooksMouse";
 //import MouseContainer from "./HooksComponents/MouseContainer";
-import IntervalCounter from "./HooksComponents/intervalCounter";
+//import IntervalCounter from "./HooksComponents/intervalCounter";
+//import DataFetching from "./HooksComponents/DataFetching";
+//import DataFetching2 from "./HooksComponents/DataFetching2";
+import DataFetching3 from "./HooksComponents/DataFetching3";
+//import UseContext from "./HooksComponents/UseContext";
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 class App extends Component {
   render() {
@@ -50,9 +56,19 @@ class App extends Component {
         <HooksEffect1 />
         <HooksMouse />
         <MouseContainer />
+        <IntervalCounter />
+        <UserContext.Provider value={"Olaseni"}>
+          <ChannelContext.Provider value={"Moses"}>
+            <UseContext />
+          </ChannelContext.Provider>
+        </UserContext.Provider>
+        <DataFetching />
+        <DataFetching2 />
+        <DataFetching3 />
       </>*/
       <>
-      <IntervalCounter />
+      
+      <DataFetching3 />
       </>
     );
   }
